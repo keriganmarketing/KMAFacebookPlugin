@@ -10,8 +10,8 @@ class PluginConfig
 
     public function __construct()
     {
-        $this->pluginSlug = plugin_basename(dirname(dirname(__FILE__)));
-        $this->pluginName = plugin_basename(dirname(dirname(__FILE__)));
+        $this->pluginSlug = plugin_basename(__FILE__);
+        $this->pluginName = plugin_basename(__FILE__);
         $this->pluginDir = dirname(dirname(__FILE__));
     }
 
