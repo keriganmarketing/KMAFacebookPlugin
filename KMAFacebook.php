@@ -4,7 +4,7 @@
  * Plugin URI: https://www.keriganmarketing.com
  * Description: Plugin allows easy setup of auth tokens and various settings required to automate your blog
  * Author: Kerigan Marketing Associates
- * Version: 0.1
+ * Version: 0.2
  * Release Date: 1/16/18
  * Latest Update: 1/16/18
  * Initial Release Date: 1/16/18
@@ -12,7 +12,7 @@
  *
  * @package KMAFacebook
  * @since 1.3
- * @version 0.1
+ * @version 0.2
  */
 
 require_once ('vendor\autoload.php');
@@ -33,8 +33,8 @@ add_action('init', function(){
         return;
     }else{
 
-//        $update = new KMAFacebook\PluginSetup();
-//        $update->updatePlugin();
+        $update = new KMAFacebook\PluginSetup();
+        $update->updatePlugin();
 
         new KMAFacebook\AdminPages();
     }
